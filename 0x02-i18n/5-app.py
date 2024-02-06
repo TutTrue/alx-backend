@@ -51,7 +51,7 @@ def get_locale() -> str:
 @app.route('/', strict_slashes=False)
 def index() -> str:
     """ Returns the index page """
-    username=g.user.get("name") if g.user else None
+    username = g.user.get("name") if g.user else None
     return render_template('5-index.html', username=username)
 
 
